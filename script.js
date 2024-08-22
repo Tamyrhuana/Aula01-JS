@@ -3,40 +3,29 @@
 e 4 notas de dois alunos e mostre as
 médias desses 2 alunos."
 */
-var nome = window.prompt("Informe o nome: ");
+var nome1, nome2 = "";
+var nota1, nota2, nota3, nota4, nota5, nota6, nota7, nota8 = 0
 
-var nota1 = window.prompt("Digite a nota 1:");
-nota1 = parseFloat(nota1);
 
-var nota2 = window.prompt("Digite a nota 2:");
-nota2 = parseFloat(nota2);
+nome1 = window.prompt("Digite o Nome do Aluno 1");
+nota1 = parseFloat(prompt("Digite a Nota 1 do Aluno 1"));
+nota2 = parseFloat(prompt("Digite a Nota 2 do Aluno 1"));
+nota3 = parseFloat(prompt("Digite a Nota 3 do Aluno 1"));
+nota4 = parseFloat(prompt("Digite a Nota 4 do Aluno 1"));
 
-var nota3 = window.prompt("Digite a nota 3:");
-nota3 = parseFloat(nota3);
 
-var nota4 = window.prompt("Digite a nota 4:");
-nota4 = parseFloat(nota4);
+nome2 = window.prompt("Digite o Nome do Aluno 2");
+nota5 = parseFloat(prompt("Digite a Nota 1 do Aluno 2"));
+nota6 = parseFloat(prompt("Digite a Nota 2 do Aluno 2"));
+nota7 = parseFloat(prompt("Digite a Nota 3 do Aluno 2"));
+nota8 = parseFloat(prompt("Digite a Nota 4 do Aluno 2"));
 
-var media = (nota1 + nota2 + nota3 + nota4)+/4;
+var media1, media2 = 0;
+media1 = (nota1 + nota2 + nota3 + nota4) / 4;
+media2 = (nota5 + nota6 + nota7 + nota8) / 4;
 
-var mensagem = nome + ", você obteve a média: " + media;
-window.alert(mensagem);
+var mensagem = `
+${nota1}, sua média é ${media1}, parabéns!
+${nota2}, sua média é ${media2}, parabéns!`;
 
-var nome = window.prompt("Informe o nome: ");
-
-var nota1 = window.prompt("Digite a nota 1:");
-nota1 = parseFloat(nota1);
-
-var nota2 = window.prompt("Digite a nota 2:");
-nota2 = parseFloat(nota2);
-
-var nota3 = window.prompt("Digite a nota 3:");
-nota3 = parseFloat(nota3);
-
-var nota4 = window.prompt("Digite a nota 4:");
-nota4 = parseFloat(nota4);
-
-var media = (nota1 + nota2 + nota3 + nota4)+/4;
-
-var mensagem = nome + ", você obteve a média: " + media;
-window.alert(mensagem);
+alert(mensagem);
